@@ -11,8 +11,8 @@ while True:
     # detector.findHand(img)
     detector.findHand(img, draw=False)# to not draw the landmarks but still detect them and return coordinates
     # lmList = detector.findPosition(img)
-    lmList = detector.findPosition(img, draw=False) # to not draw the landmarks
-    if len(lmList) != 0:
+    lmList = detector.findPosition(img, draw=True) # to not draw the landmarks
+    if len(lmList) != 0:    
         print(lmList[4])
     cTime = time.time()
     fps = 1/(cTime-pTime)
