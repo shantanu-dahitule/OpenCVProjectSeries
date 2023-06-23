@@ -59,8 +59,8 @@ while True:
     
     cv2.rectangle(img, (50,150), (85,400), (0,255,0), 3)
     cv2.rectangle(img, (50,int(BarVol)), (85,400), (0,255,0), cv2.FILLED)
-    cv2.putText(img, f"{str(int(VolCent))}%", (40,140), cv2.FONT_HERSHEY_PLAIN, 1, (255,0,0), 3)
-    cv2.putText(img, f"FPS: {str(int(fps))}", (40,70), cv2.FONT_HERSHEY_PLAIN, 1, (255,0,0), 2)
+    cv2.putText(img, f"{str(int(VolCent))} %", (40,140), cv2.FONT_HERSHEY_PLAIN, 1, (255,0,0), 3)
+    cv2.putText(img, f"FPS: {str(int(fps))}", (40,70), cv2.FONT_HERSHEY_PLAIN, 1, (255,0,0), 1)
     cv2.imshow("Image", img)
     if cv2.waitKey(1) & 0xFF==ord('q'):
                 break
