@@ -9,4 +9,5 @@
 
 ### Project 2: Volume control gesture using [pycaw](https://github.com/AndreMiras/pycaw) library
 - Utilising the hand Detection Module
-
+### Projet 3: Finger Counter
+- Utilising the hand detection module
